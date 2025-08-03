@@ -54,8 +54,17 @@ var mail = "@ph.ac.bd";
 console.log(studentName + studentRoll + '.'+ studentDept + mail);
 
 /** Problem 06 : (Current Salary ) */
-var experience = 30;
-var startingSalary = 45000;
+var experience = 3;
+var startingSalary = 15000;
 //write your code here
 
-var presentSalary = startingSalary*5%
+var i = 1;
+var sum = 0;
+while(i<= experience){
+  var  increment = startingSalary* .05 ;
+    sum = increment +  startingSalary;
+    startingSalary = sum ;
+    i++;
+}
+
+console.log(startingSalary.toFixed(2));
